@@ -8,5 +8,6 @@
 - 見やすくて使いやすいWebインターフェース
 
 🔧 インストール＆ローカル実行方法
+https://github.com/Patcharida07/moodFlix.git
 
 # moodFlix
