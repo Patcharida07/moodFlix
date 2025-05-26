@@ -1,6 +1,6 @@
 import streamlit as st
 from textblob import TextBlob
-import ramdom
+import random
 
 movies_by_mood = {
     "positive": ["The Pursuit of Happyness", "Forrest Gump", "La La Land"],
