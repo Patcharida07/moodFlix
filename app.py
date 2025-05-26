@@ -58,7 +58,7 @@ def recommend_movie(mood, user_text):
 
     elif mood == "怒り😠":
         return [
-            {"title": "怒り", "comment": "重く鋭い人間ドラマ。"},
+            {"title": "dgfhf", "comment": "dgdgg。", "youtube" : "https://www.youtube.com/watch?v=XjA480U_TSY"},
             {"title": "告白", "comment": "衝撃の展開が続くサスペンス。"},
             {"title": "ミュージアム", "comment": "連続殺人犯を追う衝撃スリラー。"},
             {"title": "孤狼の血", "comment": "暴力と正義が交錯する刑事ドラマ。"},
@@ -84,13 +84,34 @@ def recommend_movie(mood, user_text):
         ]
 
     elif mood == "怖い😨":
-        return [
-            {"title": "リング", "comment": "日本ホラーの金字塔。"},
-            {"title": "呪怨", "comment": "背筋が凍る恐怖体験。"},
-            {"title": "残穢【ざんえ】", "comment": "静かな恐怖がじわじわと。"},
-            {"title": "仄暗い水の底から", "comment": "不気味さと哀しさの入り混じる一作。"},
-            {"title": "屍人荘の殺人", "comment": "ホラー×推理の新感覚ミステリー。"}
-        ]
+       return [
+        {
+            "title": "リング",
+            "comment": "日本ホラーの金字塔。",
+            "link": "https://www.youtube.com/watch?v=ctB8RNIYxN4"
+        },
+        {
+            "title": "呪怨",
+            "comment": "背筋が凍る恐怖体験。",
+            "link": "https://www.youtube.com/watch?v=KzD3_H0nFWw"
+        },
+        {
+            "title": "残穢【ざんえ】",
+            "comment": "静かな恐怖がじわじわと。",
+            "link": "https://www.youtube.com/watch?v=BLr5mjbHVKM"
+        },
+        {
+            "title": "仄暗い水の底から",
+            "comment": "不気味さと哀しさの入り混じる一作。",
+            "link": "https://www.youtube.com/watch?v=VJ2u8Rqy_B4"
+        },
+        {
+            "title": "屍人荘の殺人",
+            "comment": "ホラー×推理の新感覚ミステリー。",
+            "link": "https://www.youtube.com/watch?v=H_6ubkDi_bM"
+        }
+    ]
+
 
     else:
         return [{"title": "インサイド・ヘッド", "comment": "感情の旅に出かけよう。"}]
@@ -123,6 +144,8 @@ if submit:
     for rec in recommendations:
         st.subheader(f"✅ {rec['title']}")
         st.caption(rec['comment'])
+        if "link" in rec:
+            st.markdown(f"[▶️ Watch Trailer]({rec['link']})")
 
     # 履歴の保存
     if "history" not in st.session_state:
