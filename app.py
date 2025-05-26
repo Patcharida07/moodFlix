@@ -49,68 +49,146 @@ def recommend_movie(mood, user_text):
 
     if mood == "悲しい😢":
         return [
-            {"title": "火垂るの墓", "comment": "美しくて感動的な物語。泣きたい時にぴったり。"},
-            {"title": "余命1ヶ月の花嫁", "comment": "切ないラブストーリーが心に沁みる。"},
-            {"title": "世界の中心で、愛をさけぶ", "comment": "涙が止まらない青春ドラマ。"},
-            {"title": "聲の形", "comment": "心に響く青春ドラマ。"},
-            {"title": "そして父になる", "comment": "親子の絆に心打たれる感動作。"}
+            {"title": "火垂るの墓", 
+             "comment": "美しくて感動的な物語。泣きたい時にぴったり。",
+             "link": "https://www.youtube.com/watch?v=I0aDi5D_QjA",
+             "link2": "https://www.imdb.com/title/tt0095327"},
+
+            {"title": "余命1ヶ月の花嫁",
+            "comment": "切ないラブストーリーが心に沁みる。",
+            "link":"https://www.youtube.com/watch?v=LVHLD0Ii1dg",
+            "link2":"https://www.imdb.com/title/tt1435613"},
+
+            {"title": "世界の中心で、愛をさけぶ", 
+             "comment": "涙が止まらない青春ドラマ。",
+            "link":"https://www.youtube.com/watch?v=4LFhMhdG_YQ",
+             "link2":"https://www.imdb.com/title/tt0424430"},
+
+            {"title": "聲の形", 
+             "comment": "心に響く青春ドラマ。",
+             "link":"https://www.youtube.com/watch?v=aJSXEsoT-ZI",
+             "link2":"https://www.imdb.com/title/tt5323662"},
+
+            {"title": "そして父になる", 
+             "comment": "親子の絆に心打たれる感動作。",
+             "link":"https://www.youtube.com/watch?v=-4WWLgZe1Tk",
+             "link2":"https://www.imdb.com/title/tt2331143"}
         ]
 
     elif mood == "怒り😠":
         return [
-            {"title": "dgfhf", "comment": "dgdgg。", "youtube" : "https://www.youtube.com/watch?v=XjA480U_TSY"},
-            {"title": "告白", "comment": "衝撃の展開が続くサスペンス。"},
-            {"title": "ミュージアム", "comment": "連続殺人犯を追う衝撃スリラー。"},
-            {"title": "孤狼の血", "comment": "暴力と正義が交錯する刑事ドラマ。"},
-            {"title": "新聞記者", "comment": "社会派サスペンスの秀作。"}
+            {"title": "怒り", 
+             "comment": "3 つの場所で起こる 3 つの事件は、殺人事件をめぐって展開し、人間性と信頼の危機を浮き彫りにします。",
+            "link" : "https://www.youtube.com/watch?v=aIFCb9JKdZwY",
+            "link2":"https://www.imdb.com/title/tt4384088/"},
+
+            {"title": "告白", 
+             "comment": "衝撃の展開が続くサスペンス",
+            "link" : "https://www.youtube.com/watch?v=ZsOmp4-f2Tc",
+            "link2":"https://www.imdb.com/title/tt1590089/"},
+
+            {"title": "ミュージアム", 
+             "comment": "続殺人犯を追う衝撃スリラー。",
+            "link" : "https://www.youtube.com/watch?v=igenGwcG0fE",
+            "link2":"https://www.imdb.com/title/tt5227140/"},
+
+            {"title": "孤狼の血", 
+             "comment": "暴力と正義が交錯する刑事ドラマ。",
+            "link" : "https://www.youtube.com/watch?v=1Hv1yAnFfjE",
+            "link2":"https://www.imdb.com/title/tt6622902/"},
+
+            {"title": "新聞記者", 
+             "comment": "社会派サスペンスの秀作。",
+            "link" : "https://www.youtube.com/watch?v=Mtn5pEGEC0w",
+            "link2":"https://www.imdb.com/title/tt15101670/"},
         ]
 
     elif mood == "嬉しい🙂":
         return [
-            {"title": "しあわせのパン", "comment": "北海道の自然と心温まる物語。"},
-            {"title": "歩いても 歩いても", "comment": "家族のぬくもりを感じる日常劇。"},
-            {"title": "夏目友人帳", "comment": "心優しい妖と人の交流。"},
-            {"title": "猫の恩返し", "comment": "楽しい冒険と癒しが詰まった作品。"},
-            {"title": "リトル・フォレスト", "comment": "自然と共に暮らす喜び。"}
-        ]
+            {"title": "しあわせのパン", 
+             "comment": "北海道の自然と心温まる物語。",
+            "link" : "https://www.youtube.com/watch?v=XjA480U_TSY",
+            "link2":"https://www.imdb.com/title/tt1726749/"},
 
-    elif mood == "驚き😲":
-        return [
-            {"title": "パプリカ", "comment": "夢と現実が交錯する脳内トリップ。"},
-            {"title": "イニシエーション・ラブ", "comment": "どんでん返しがすごい恋愛ミステリー。"},
-            {"title": "カメラを止めるな！", "comment": "驚きと笑いが止まらない低予算神作。"},
-            {"title": "MONSTER", "comment": "心理サスペンスの金字塔。"},
-            {"title": "嫌われ松子の一生", "comment": "波乱万丈の人生を鮮やかに描く。"}
+            {"title": "歩いても 歩いても", 
+             "comment": "家族のぬくもりを感じる日常劇。",
+            "link" : "https://www.youtube.com/watch?v=OLMvV0V1QH8",
+            "link2":"https://www.imdb.com/title/tt1087578/"},
+
+            {"title": "夏目友人帳", 
+             "comment": "心優しい妖と人の交流。",
+            "link" : "https://www.youtube.com/watch?v=yNmx5gKcHrQ",
+            "link2":"https://www.imdb.com/title/tt1352421/"},
+
+            {"title": "猫の恩返し", 
+             "comment": "楽しい冒険と癒しが詰まった作品。",
+            "link" : "https://www.youtube.com/watch?v=0sEycbCo4SE",
+            "link2":"https://www.imdb.com/title/tt0347618/"},
+
+            {"title": "リトル・フォレスト", 
+             "comment": "自然と共に暮らす喜び。",
+            "link" : "https://www.youtube.com/watch?v=q_CUp9suEeo",
+            "link2":"https://www.imdb.com/title/tt3474600/"},
         ]
 
     elif mood == "怖い😨":
-       return [
-        {
+        return [
+            {
             "title": "リング",
             "comment": "日本ホラーの金字塔。",
-            "link": "https://www.youtube.com/watch?v=ctB8RNIYxN4"
+            "link": "https://www.youtube.com/watch?v=QxMwjmJ15Js",
+            "link2": "https://www.imdb.com/title/tt0178868"
         },
         {
             "title": "呪怨",
             "comment": "背筋が凍る恐怖体験。",
-            "link": "https://www.youtube.com/watch?v=KzD3_H0nFWw"
+            "link": "https://www.youtube.com/watch?v=KzD3_H0nFWw",
+            "link2": "https://www.imdb.com/title/tt0364385"
         },
         {
             "title": "残穢【ざんえ】",
             "comment": "静かな恐怖がじわじわと。",
-            "link": "https://www.youtube.com/watch?v=BLr5mjbHVKM"
+            "link": "https://www.youtube.com/watch?v=BLr5mjbHVKM",
+            "link2": "https://www.imdb.com/title/tt4842814" 
         },
         {
             "title": "仄暗い水の底から",
             "comment": "不気味さと哀しさの入り混じる一作。",
-            "link": "https://www.youtube.com/watch?v=VJ2u8Rqy_B4"
+            "link": "https://www.youtube.com/watch?v=VJ2u8Rqy_B4",
+            "link2": "https://www.imdb.com/title/tt0308379" 
         },
         {
             "title": "屍人荘の殺人",
             "comment": "ホラー×推理の新感覚ミステリー。",
-            "link": "https://www.youtube.com/watch?v=H_6ubkDi_bM"
+            "link": "https://www.youtube.com/watch?v=H_6ubkDi_bM",
+            "link2": "https://www.imdb.com/title/tt11096624"
         }
-    ]
+            ]
+
+    elif mood == "驚き😲":
+        return [
+        {"title": "パプリカ",
+         "comment": "夢と現実が交錯する脳内トリップ。",
+         "link": "https://www.youtube.com/watch?v=u3xItKa-3wI",
+         "link2": "https://www.imdb.com/title/tt0851578/" },
+        {"title": "イニシエーション・ラブ",
+         "comment": "どんでん返しがすごい恋愛ミステリー。",
+         "link": "https://www.youtube.com/watch?v=MKXJgnPk8EM",
+         "link2": "https://www.imdb.com/title/tt4119590/" },
+        {"title": "カメラを止めるな！",
+         "comment": "驚きと笑いが止まらない低予算神作。",
+         "link": "https://www.youtube.com/watch?v=YEpQQ-DURnM",
+         "link2": "https://www.imdb.com/title/tt7914416/" },
+        {"title": "MONSTER",
+         "comment": "心理サスペンスの金字塔。",
+         "link": "https://www.youtube.com/watch?v=8VeP1Lw2t04",
+         "link2": "https://www.imdb.com/title/tt3024404/" },
+        {"title": "嫌われ松子の一生",
+         "comment": "波乱万丈の人生を鮮やかに描く。",
+         "link": "https://www.youtube.com/watch?v=Hknm5AZH_Sg",
+         "link2": "https://www.imdb.com/title/tt0768120/" }
+        ] 
+ 
 
 
     else:
@@ -146,6 +224,8 @@ if submit:
         st.caption(rec['comment'])
         if "link" in rec:
             st.markdown(f"[▶️ Watch Trailer]({rec['link']})")
+        if "link2" in rec:
+            st.markdown(f"[▶️ imdb page]({rec['link2']})")
 
     # 履歴の保存
     if "history" not in st.session_state:
